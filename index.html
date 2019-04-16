@@ -65,19 +65,46 @@ original manuscript:
 </div>
 
 
+Remarks (bar numbers refer to the ground truth):
+<ul>        
+<li> on bar 6, part 1, OMR forgot a rest which is detected as added (green) in the ground truth.</li>
+<li> on bar 6, part 4, the first note has wrong pitch in OMR. this is signaled as a substitution (yellow). 
+     There is also a note missed by OMR at the end of the bar (in green in ground truth).</li>
+<li> on bar 7, part 1, note the OMR mistake.</li>
+<li> the OMR missed the barline between bar 10 and 11 (for all parts). this is interpreted as having the notes of the first bar (first 4 beats) deleted (in red in OMR version) and reinserted (in green in ground truth).</li>
+<li> on bar 14: a missing note (in green in ground truth).</li>
+<li> in bars 15, 16, 18: the OMR misinterpreted a key signature as an accident on bar 14, and consequently the editor added accidents problems are due to the change of key signature.</li>
+</ul>        
 
-        <h2>Contact</h2>
-        Hidden for anonymous submission.
+The difference of key signature is not detected currently. 
+If difference of key signature would be detected, then it may seem redundant to signal also the additional accidents because the pitches are the same.
+However, the syntactic diff tool compares the graphical content of scores, hence an additional accident is considered as a difference (whatever the pitch value).
 
-      </section>
-    </div>
+About the missing barline: 
+the logic of  our diff procedure is to consider the parts as sequences of bars, and to perform bar-by-bar comparison based on the content of bars. The barlines themselves are not considered as a content in this procedure.
+That explains the displayed difference for bar 10.
+        
+More generally, following the above logic, 
+the page layout (organisation of bars in staves and of staves in a page) 
+is not compared by our diff procedure.
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Copyright information hidden until publication.</p>
-      </footer>
-    </div>
+Moreover, the trill marks are currently ignored by our procedure (that will be treated in a next version), 
+as well as the changes of clef or key signature and also text indications.
 
-  </body>
+        
+        
+<h2>Contact</h2>
+Hidden for anonymous submission.
+
+</section>
+</div>
+
+<!-- FOOTER  -->
+<div id="footer_wrap" class="outer">
+<footer class="inner">
+<p class="copyright">Copyright information hidden for anonymous submission.</p>
+</footer>
+</div>
+
+</body>
 </html>
