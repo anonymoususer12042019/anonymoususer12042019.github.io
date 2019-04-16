@@ -76,13 +76,15 @@ Remarks (bar numbers refer to the ground truth):
 <li> in bars 15, 16, 18: the OMR misinterpreted a key signature as an accident on bar 14, and consequently the editor added accidents problems are due to the change of key signature.</li>
 </ul>        
 
-The difference of key signature is not detected currently. 
-If difference of key signature would be detected, then it may seem redundant to signal also the additional accidents because the pitches are the same.
-However, the syntactic diff tool compares the graphical content of scores, hence an additional accident is considered as a difference (whatever the pitch value).
+The differences of key signature are currently ignored. 
+If a difference of key signature would be detected, 
+then it might seem redundant to signal also the additional accidents because the pitches are the same.
+However, the syntactic diff tool compares the graphical content of scores, 
+hence an additional accident is considered as a difference (whatever the pitch value).<br>
 
 About the missing barline: 
 the logic of  our diff procedure is to consider the parts as sequences of bars, and to perform bar-by-bar comparison based on the content of bars. The barlines themselves are not considered as a content in this procedure.
-That explains the displayed difference for bar 10.
+That explains the displayed difference for bar 10.<br>
         
 More generally, following the above logic, 
 the page layout (organisation of bars in staves and of staves in a page) 
