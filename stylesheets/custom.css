@@ -11,3 +11,12 @@
   clear: both;
   display: table;
 } 
+
+#mainDiv{
+		width:50%;
+  margin:auto;
+}
+
+img{
+		max-width:100%;
+}
