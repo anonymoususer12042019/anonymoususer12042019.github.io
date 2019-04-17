@@ -1,4 +1,14 @@
- /* Three image containers (use 25% for four, and 50% for two, etc) */
+
+.anonymous {
+  background-color:#760E2B; 
+  color:white;
+}
+
+.example {
+  color:#250E76;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
 .colonne {
   float: left;
   width: 50%;
@@ -16,11 +26,4 @@
   box-sizing: border-box;
 }
 
-.anonymous {
-  background-color:#760E2B; 
-  color:#FFFFFF;
-}
 
-.example {
-  color:#250E76;
-}
