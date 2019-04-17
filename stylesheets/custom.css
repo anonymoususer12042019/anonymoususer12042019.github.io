@@ -16,4 +16,11 @@
   box-sizing: border-box;
 }
 
+.anonymous {
+  background-color:#760E2B; 
+  color:#FFFFFF;
+}
 
+.example {
+  color:#250E76;
+}
