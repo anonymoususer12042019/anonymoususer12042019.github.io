@@ -40,16 +40,16 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1920"
-     inkscape:window-height="1001"
+     inkscape:window-height="1017"
      id="namedview3787"
      showgrid="false"
-     inkscape:zoom="0.63569024"
-     inkscape:cx="1295.8401"
-     inkscape:cy="964.02689"
-     inkscape:window-x="-9"
-     inkscape:window-y="-9"
+     inkscape:zoom="0.31784512"
+     inkscape:cx="1260.2522"
+     inkscape:cy="2205.0453"
+     inkscape:window-x="1192"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="m-446" />
+     inkscape:current-layer="m-314" />
   <desc
      id="desc2">Engraved by Verovio 2.1.0-dev-[undefined]</desc>
   <defs
@@ -9335,7 +9335,7 @@
               <g
                  class="note"
                  id="m-449"
-                 style="fill:#008000">
+                 style="fill:#000000">
                 <use
                    height="720px"
                    width="720px"
@@ -9343,18 +9343,18 @@
                    y="19563"
                    xlink:href="#E0A4"
                    id="use2866"
-                   style="fill:#008000" />
+                   style="fill:#000000" />
                 <g
                    class="stem"
                    id="g2870"
-                   style="fill:#008000">
+                   style="fill:#000000">
                   <rect
                      height="608"
                      width="18"
                      x="18206"
                      y="19585"
                      id="rect2868"
-                     style="fill:#008000" />
+                     style="fill:#000000" />
                 </g>
               </g>
               <g
