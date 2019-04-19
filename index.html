@@ -35,6 +35,14 @@
 We display here some experiments with a tool for comparing XML-MEI music score files 
 (it aims to be an analog for score files of the Unix diff tool for text files).<br>
 
+There are two modes for performing the comparison: 
+<ul>
+  <li>A melodic mode, in which scores are represented as sequences of notes (triplets of pitch, onset and duration)
+      which are compared</li>
+  <li>A syntactic mode, in which the engraving (graphical) content of scores are compared 
+    (including ties, beams, dots, accidents etc). 
+</ul>
+
 The MEI scores in the dataset were produced by members of 
 the laboratory <span class="anonymous">*REMOVED FOR ANONYMITY*</span>
 during the <span class="anonymous">*REMOVED FOR ANONYMITY*</span> project.
@@ -57,15 +65,32 @@ This page will be updated when these issues will be fixed.
 original manuscript: 
 <a href="https://gallica.bnf.fr/ark:/12148/btv1b8451564d/f15.image">https://gallica.bnf.fr/ark:/12148/btv1b8451564d/f15.image</a>
        
-        
+
+
+<h5>Melodic difference</h5>
+
 <div class="ligne">
   <div class="colonne">
   <h5>OMRized version</h5>
-  <img src="images/gal.svg" width="100%" alt="OMR"/>
+  <img src="images/galantes-mel.svg" width="100%" alt="OMR"/>
   </div>
   <div class="colonne">
   <h5>Manual correction (ground truth)</h5>
-  <img src="images/gal_edited.svg" width="100%" alt="edited"/>
+  <img src="images/galantes_edited-mel.svg" width="100%" alt="edited"/>
+  </div>
+</div>
+
+
+<h5>Syntactic difference</h5>
+
+<div class="ligne">
+  <div class="colonne">
+  <h5>OMRized version</h5>
+  <img src="images/galantes-syn.svg" width="100%" alt="OMR"/>
+  </div>
+  <div class="colonne">
+  <h5>Manual correction (ground truth)</h5>
+  <img src="images/galantes_edited-syn.svg" width="100%" alt="edited"/>
   </div>
 </div>
 
