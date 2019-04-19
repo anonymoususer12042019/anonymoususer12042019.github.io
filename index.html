@@ -31,7 +31,7 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
 
-<h2>Abstract</h2>
+<h2>Dataset Rameau</h2>
 We display here some experiments with a tool for comparing XML-MEI music score files 
 (it aims to be an analog for score files of the Unix diff tool for text files).<br>
 
@@ -59,15 +59,13 @@ Due to copyright issues, most of the examples of the dataset cannot be displayed
 This page will be updated when these issues will be fixed.
 
 
-<h2>Scores from the dataset</h2>
-
-<h4><span class="example">Example 1</span> Rameau: Les Indes Galantes</h4>
+<h3><span class="example">Example 1</span> Rameau: Les Indes Galantes</h3>
 original manuscript: 
 <a href="https://gallica.bnf.fr/ark:/12148/btv1b8451564d/f15.image">https://gallica.bnf.fr/ark:/12148/btv1b8451564d/f15.image</a>
-       
+     
 
 
-<h5>Melodic difference</h5>
+<h4>Melodic difference</h4>
 
 <div class="ligne">
   <div class="colonne">
@@ -80,8 +78,19 @@ original manuscript:
   </div>
 </div>
 
+Remarks (bar numbers refer to the ground truth):
+<ul>         
+<li> on bar 6, part 1: OMR missed a rest which is detected as added (green) in the ground truth.</li>
+<li> on bar 2, part 4: the pitches of the notes are not the same due to a missing clef in OMR version (the change is marked in yellow in both versions)
+<li> on bar 6, part 4: the first note has wrong pitch in OMR. this is signaled as a substitution (yellow). 
+     There is also a note missed by OMR at the end of the bar (in green in ground truth).</li>
+<li> on bar 7, part 1: rhythmic mistakes in the OMR version.</li>
+<li> on bar 14: a missing note (in green in ground truth).</li>
+</ul>     
 
-<h5>Syntactic difference</h5>
+The missed barline between bar 10 and 11 is not detected in melodic mode because it is not a melodic difference.
+
+<h4>Syntactic difference</h4>
 
 <div class="ligne">
   <div class="colonne">
@@ -97,10 +106,9 @@ original manuscript:
 
 Remarks (bar numbers refer to the ground truth):
 <ul>        
-<li> on bar 6, part 1: OMR forgot a rest which is detected as added (green) in the ground truth.</li>
-<li> on bar 6, part 4: the first note has wrong pitch in OMR. this is signaled as a substitution (yellow). 
-     There is also a note missed by OMR at the end of the bar (in green in ground truth).</li>
-<li> on bar 7, part 1: note the OMR mistake for rhythm.</li>
+<li> on bar 6, part 1: same differences as in melodic mode for the missing rest.</li>
+<li> on bar 6, part 4: same differences as in melodic mode.</li>
+<li> on bar 7, part 1: the interpretation of the rhythmic difference differs from the melodic comparison. Note in particular the deleted note and the triplet notation. </li>
 <li> the OMR missed the barline between bar 10 and 11 (for all parts). this is interpreted as having the notes of the first bar (first 4 beats) deleted (in red in OMR version) and reinserted (in green in ground truth).</li>
 <li> on bar 14: a missing note (in green in ground truth).</li>
 <li> in bars 15, 16, 18: the OMR misinterpreted a key signature as an accident on bar 14, and consequently the editor added accidents problems are due to the change of key signature.</li>
