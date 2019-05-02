@@ -54,11 +54,8 @@ containing 21 ouvertures of Jean-Philippe Rameau.<br>
 
 Every example is composed one page OMRized from the manuscripts, and its manual correction. 
 In the experiments, we compute and display side by side the diffs between the OMRized version and the manual version.
-If one considers the manual version as a ground truth, 
-then the displayed differences can be useful for a fine detection of OMR errors.<br>
-
-Due to copyright issues, only one of the examples of the dataset can be displayed here.
-This page will be updated when these issues will be fixed.
+Considering the manual version as a ground truth, 
+the displayed differences can be useful for a fine detection of OMR errors.<br>
 
 
 <h3><span class="example">Example 1</span> Rameau: Les Indes Galantes</h3>
@@ -135,7 +132,66 @@ is not compared by our diff procedure.
 Moreover, the trill marks are currently ignored by our procedure (that will be treated in a next version), 
 as well as the changes of clef or key signature and also text indications.
 
-        
+
+
+
+<h3><span class="example">Example 2</span> Rameau: Les surprises de l’Amour</h3>
+original manuscript: 
+<a href="https://gallica.bnf.fr/ark:/12148/btv1b84788964/f11.image">https://gallica.bnf.fr/ark:/12148/btv1b84788964/f11.image</a>
+
+<h4>Syntactic difference</h4>
+
+<div class="ligne">
+  <div class="colonne">
+  <h5>OMRized version</h5>
+  <img src="images/amour-syn.svg" width="100%" alt="OMR"/>
+  </div>
+  <div class="colonne">
+  <h5>Manual correction (ground truth)</h5>
+  <img src="images/amour_edited-syn.svg" width="100%" alt="edited"/>
+  </div>
+</div>
+
+The diff tool highlights differences in:
+<ul>        
+  <li> pitch
+      <ul>
+      <li> violin 1, bar 2</li>
+      </ul>
+  </li>
+  <li> accidents
+      <ul>
+      <li> bass, bars 1, 11</li>
+      <li> violin 2, last bar</li>
+      </ul>
+  </li>
+  <li> rhythm (dots & rests)
+      <ul>
+      <li> violin 2, bar 2</li>
+      <li> violin 1, bars 13, 14</li>
+      <li> violin 2, bars 13, 14</li>
+      </ul>
+  </li>
+
+  <li> rhythm (ties)
+      <ul>
+      <li> violin 2, bars 3, 6</li>
+      </ul>
+  </li>
+      
+  <li> missing note
+      <ul>
+      <li>  bass, bar 2</li>
+      <li> bass, bar 12</li>
+      </ul>
+  </li>
+</ul>
+
+
+remark: 
+this example was ran with an option to ignore grace notes.
+
+
         
 <h2>Contact</h2>
 <span class="anonymous">*REMOVED FOR ANONYMITY*</span>
